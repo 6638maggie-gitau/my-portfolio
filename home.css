@@ -1,0 +1,18 @@
+.my-name {
+    margin-top: 10px;
+}
+.name{
+    font-weight: 900;
+    font-size: large;
+    color: blueviolet;
+    margin-left: 10PX;
+
+}
+img {
+    width: 20rem;
+    height: 20rem;
+    object-fit: cover;
+    border-radius: 50%;
+    
+    margin:20px ;
+}

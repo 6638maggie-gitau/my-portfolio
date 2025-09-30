@@ -1,0 +1,56 @@
+*{
+    padding: 0;
+    box-sizing: border-box;
+    margin: 0;
+    font-family: helvetica;
+}
+
+body{
+   background-color: aqua; 
+}
+.image {
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+    border-radius: 50%;
+
+}
+.profile {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+}
+nav {
+    justify-content: space-between;
+     display: flex;
+    align-items: center;
+    text-decoration: solid;
+    padding: 10px;
+    background: greenyellow
+}
+.font{
+    font-size: medium;
+}
+.nav-links {
+    display: flex;
+    gap: 10px;
+
+}
+.nav-links a {
+    display: flex;
+    text-decoration: none;
+    justify-content: space-evenly;
+    font-size: 20px;
+    font-weight: 800;
+    color: black;
+}
+.nav-links a:hover{
+    cursor: pointer;
+    background-color: rgb(47, 0, 255);
+    text-decoration: underline;
+    color: aliceblue;
+    
+}
+
+
