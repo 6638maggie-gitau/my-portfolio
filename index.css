@@ -9,17 +9,36 @@ body{
    background-color: aqua; 
 }
 .image {
-    width: 60px;
-    height: 60px;
+    width: 50px;
+    height: 50px;
     object-fit: cover;
     border-radius: 50%;
-
+    animation: rotate 5s linear infinite;
 }
+
+@keyframes rotate {
+    from{
+        transform: rotate (0deg);
+    }
+    to{
+        transform: rotate (360deg);
+    }
+}
+    
 .profile {
-    display: flex;
+      display: flex;
     align-items: center;
     gap: 10px;
+    animation:rotate 5s linear infinite;
 
+}
+@keyframes rotate {
+    from{
+        transform:rotate(0deg);
+    }
+    to{
+        transform:rotate(360deg);
+    }
 }
 nav {
     justify-content: space-between;
@@ -27,7 +46,7 @@ nav {
     align-items: center;
     text-decoration: solid;
     padding: 10px;
-    background: greenyellow
+    background: greenyellow;
 }
 .font{
     font-size: medium;
@@ -35,6 +54,8 @@ nav {
 .nav-links {
     display: flex;
     gap: 10px;
+    align-items: center;
+    display: flex;
 
 }
 .nav-links a {
@@ -44,13 +65,126 @@ nav {
     font-size: 20px;
     font-weight: 800;
     color: black;
+    
 }
 .nav-links a:hover{
     cursor: pointer;
     background-color: rgb(47, 0, 255);
     text-decoration: underline;
     color: aliceblue;
+    animation:rotate 5s linear infinite;
     
+}
+@keyframes rotate{
+    from{
+        transform:rotate(0deg);
+    }
+    to{
+        transform:rotate(360deg);
+    }
+}
+.me{
+   color:tomato ; 
+   text-align: center; 
+   margin-top: 15px;
+    max-width: 50%;
+    border-bottom: 2px;
+    margin-inline:auto;
+    font-size: 20px;
+
+}
+.web{
+    color: black;
+    font-weight: 900;
+    font-size: medium;
+    justify-content: right;
+    align-items: center;
+    padding: 10px;
+    max-width: 50%;
+    line-height: 1.7;
+    text-align: center;
+    margin: auto;
+}
+.resume-btn{
+    display: flex;
+    background-color: brown;
+    color: white;
+    padding: 20px;
+    cursor: pointer;
+    font-weight: bold;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+    max-width: 50%;
+}
+.Tech{
+    align-items: center;
+    color: blue;
+    justify-content: space-between;
+}
+.ideas{
+    font-weight: bold;
+    color: black;
+    justify-content: space-between;
+    animation:bounce 2s infinite;
+    transition: red 0.3s ease;
+    margin-top: 20px;
+}
+@keyframes bounce{
+    0%,100%{
+        transform:translateY(0);
+    }
+    50%{
+        transform:translateY(-10px);
+    }
+}
+.digital{
+    margin-top: 25px;
+    color: purple;
+    justify-content: right;
+    align-items: center;
+    font-weight: 900;
+    font-size: medium;
+    margin: auto;
+    max-width: 50%;
+    padding: 45px;
+    animation:bounce 3s infinite;
+    transition: none;
+}
+@keyframes bounce{
+    0%,100%{
+        transform:translateY(0);
+    }
+    50%{
+        transform:translateY(-20px);
+    }
+}
+.real{
+    color: black;
+    font-weight: 900;
+    align-items: center;
+    justify-content: center;
+    max-width: 50%;
+    margin: auto;
+}
+.logic{
+    color:purple;
+    font-weight: 900;
+    align-items: center;
+    justify-content: center;
+    max-width: 50%;
+    margin: auto;
+    margin-top: 40px;
+    animation:bounce 3s infinite;
+    transition: none;
+}
+@keyframes bounce{
+    0%,100%{
+        transform:translateY(0);
+    }
+    50%{
+        transform: translateY(-30px);
+    }
 }
 
 
